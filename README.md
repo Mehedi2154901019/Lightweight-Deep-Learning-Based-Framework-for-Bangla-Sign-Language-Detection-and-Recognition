@@ -1,4 +1,4 @@
-# Lightweight-Deep-Learning-Based-Framework-for-Bangla-Sign-Language-Detection-and-Recognition
+<img width="890" height="413" alt="image" src="https://github.com/user-attachments/assets/3dbff37c-ac67-4f9e-9de7-b0500105f201" /># Lightweight-Deep-Learning-Based-Framework-for-Bangla-Sign-Language-Detection-and-Recognition
 
 The framework covers both Bangla Static One-Hand, Static Two-Hands, Words and Sentences Gestures defining full modality. Exclusive real time augmentation in Xception-CNN, Unique feature extraction of Bi-LSTM by MediaPipe Hand and Pose Landmarks provided very good accuracy which is rare in Bangla Sign Language studies.
 ---
@@ -62,6 +62,8 @@ Early Stopping, patience = 5
 46 epochs needed (each 5-6 minutes)
 saved model as .keras ( 230.86 MB)
 
+Look at: bdsl49cnn.ipynb
+
 ---
 
 ##MLP (BDSL47)
@@ -116,6 +118,8 @@ Early Stopping, patience → 30
 37,999 parameters 
 model size → 510 KB
 
+Look at: final_bdsl47_model.ipynb
+
 ---
 
 ##Bi-LSTM (DU Dataset)
@@ -132,7 +136,7 @@ For each frame ->
             Euclidean Distance between left wrist to nose
             Euclidean Distance between right wrist to nose
 Total 126 + 2 → 128 features
-Finally Numpy Array of 128 features per frame
+Finally Numpy Array of 128 features per frame (frame_00.npy is one the examples)
 
 **Final Dataset Architecure:**
 
@@ -157,6 +161,8 @@ Early Stopping, patience → 30
 210 thousand parameters 
 model size → 2.47MB
 
+Look at: Model.ipynb
+
 ---
 
 ##Model Pipelines
@@ -180,6 +186,47 @@ model size → 2.47MB
 **Final combined framework**
 
 ![final](assets/final.png)
+
+---
+
+##Result Analysis
+
+**Xception-CNN**
+
+![r](assets/r1.png)
+
+**MLP**
+
+![r](assets/r2.png)
+
+**Bi-LSTM**
+
+![r](assets/r3.png)
+
+**Training Accuracy**
+
+![accuracy](assets/accuracy.png)
+
+**MLP confusion matrix**
+
+![mlpc](assets/mlpc.png)
+
+Few classes had slighly wrong prediction because of close and similar gestures
+
+**Bi-LSTM confusion matrix**
+
+![c2](assets/c2.png)
+
+Few classes like vai, bon, etc has less f1 score comparative to others
+
+##Summary of models
+
+![summary](assets/summary.png)
+
+xception-cnn was heavyweight, but mlp and bi-lstm was very lightweight. xception-cnn boxes throughput and inference time was not measured as they are obviously heavyweight seen from model size and parameters. Future work will be to make that lightweight too like other two models
+
+
+
 
 
 
