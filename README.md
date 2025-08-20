@@ -1,6 +1,6 @@
 # Lightweight-Deep-Learning-Based-Framework-for-Bangla-Sign-Language-Detection-and-Recognition
 
-The framework covers both Bangla Static One-Hand, Static Two-Hands, Words and Sentences Gestures defining full modality. Exclusive real time augmentation in Xception-CNN, Unique feature extraction of Bi-LSTM provided very good accuracy which is rare in Bangla Sign Language studies.
+The framework covers both Bangla Static One-Hand, Static Two-Hands, Words and Sentences Gestures defining full modality. Exclusive real time augmentation in Xception-CNN, Unique feature extraction of Bi-LSTM by MediaPipe Hand and Pose Landmarks provided very good accuracy which is rare in Bangla Sign Language studies.
 ---
 The datasets used for this work is below with statistics:
 
