@@ -12,7 +12,7 @@ The models used corresponding to the datasets are:
 
 ---
 
-##Xception-CNN (BdSL49)
+## Xception-CNN (BdSL49)
 
 **Dataset Preprocessing:**
 Two initial folders → Detection & Recognition
@@ -66,7 +66,7 @@ Look at: bdsl49cnn.ipynb
 
 ---
 
-##MLP (BDSL47)
+## MLP (BDSL47)
 
 **Data Preprocessing**
 Merged alphabets and digits from 10 users to one directory
@@ -122,7 +122,7 @@ Look at: final_bdsl47_model.ipynb
 
 ---
 
-##Bi-LSTM (DU Dataset)
+## Bi-LSTM (DU Dataset)
 
 The dataset was collected from DU and uploaded on kaggle: https://www.kaggle.com/datasets/hassan0008jhh/video-dataset
 
@@ -165,7 +165,7 @@ Look at: Model.ipynb
 
 ---
 
-##Model Pipelines
+## Model Pipelines
 
 **Xception-CNN pipeline**
 
@@ -189,7 +189,7 @@ Look at: Model.ipynb
 
 ---
 
-##Result Analysis
+## Result Analysis
 
 **Xception-CNN**
 
@@ -219,7 +219,7 @@ Few classes had slighly wrong prediction because of close and similar gestures
 
 Few classes like vai, bon, etc has less f1 score comparative to others
 
-##Summary of models
+## Summary of models
 
 ![summary](assets/summary.png)
 
